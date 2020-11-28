@@ -2,7 +2,9 @@
   --primary: #333;
   --secondary: #bbb;
   }
-  body {font-family: Arial, Helvetica, sans-serif;}
+  body {font-family:'Nunito', sans-serif;
+  font-size: 12px;}
+  
   * {box-sizing: border-box;}
   @media screen and (min-width: 780px) {
   .bg-img {
@@ -62,28 +64,46 @@
   background-color: #ddd;
   color: black;
   }
+
+.fullcontainer
+{
+  position: relative;
+  max-width: 70rem;
+  max-height: initial;
+  margin: 0px auto
+}
+
   #ementa{
   min-height:400px;
   text-align:center;
   color:#000;
   }
   #index h1{
-  font-weight: 700;
+  font-weight: 550;
   font-size: 40px;
   margin-bottom: 150px;
   margin-top: 10px;
+  
   }
   #index p{
   margin-bottom: 30px;
   }
   /* PAGINA EMENTA */
   #ementa h1{
-  font-weight: 700;
+  font-weight: 550;
   font-size: 40px;
   margin-top: 10px;
+  margin-bottom: 10px;
+  text-align: left;
   }
+
+
   #ementa p{
   margin-bottom: 30px;
+  font-size: large;
+  font-weight: 400;
+  text-align: left;
+
   }
   /* EMENTA CONTAINER */
   #ementa .flex-container {
@@ -101,6 +121,7 @@
   height: 300px;
   perspective: 1000px;
   margin-left: 50px;
+  margin-bottom: 50px;
   }
   #ementa .flip-card-inner {
   position: relative;
@@ -110,9 +131,11 @@
   transition: transform 0.6s;
   transform-style: preserve-3d;
   box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  border-radius: 50px;
   }
   #ementa .flip-card:hover .flip-card-inner {
   transform: rotateY(180deg);
+  border-radius: 50px;
   }
   #ementa .flip-card-front, .flip-card-back {
   position: absolute;
@@ -120,13 +143,29 @@
   height: 100%;
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
+  border-radius: 50px;
   }
   #ementa .flip-card-front {
   background-color:#bbb;
   color: black;
+  border-radius: 50px;
+  
   }
   #ementa .flip-card-back {
   background-color:var(--primary);
   color: white;
   transform: rotateY(180deg);
+  border-radius: 50px;
+  }
+
+  #ementa .flip-card  img {
+    width:300px;
+    height:300px;
+    border-radius: 50px;
+  }
+
+  #reservas{
+    min-height:400px;
+    text-align:center;
+    color:#000;
   }
